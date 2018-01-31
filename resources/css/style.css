@@ -1,0 +1,53 @@
+/* Universal Styles */
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  background-color: white;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  height: 4rem;
+}
+
+header img {
+  flex-grow: 0.02;
+}
+
+header .logo {
+  flex: 1;
+}
+
+header nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 1rem;
+}
+
+nav a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+
+#title {
+  color: gray;
+  font-size: 1.5rem;
+}
+
+a span {
+  font-weight: bold;
+}
