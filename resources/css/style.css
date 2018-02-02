@@ -10,6 +10,8 @@ html {
 header {
   width: 100%;
   background-color: white;
+  position: fixed;
+  z-index: 1;
 }
 
 header .content {
@@ -17,10 +19,6 @@ header .content {
   align-items: center;
   padding: 1rem 1.5rem;
   height: 4rem;
-}
-
-header img {
-  flex-grow: 0.02;
 }
 
 header .logo {
@@ -50,6 +48,48 @@ a span {
   font-weight: bold;
 }
 
+.logo-desktop img {
+  display: flex;
+}
+
+.logo-desktop img {
+  flex-grow: 0.02;
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 720px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .content {
+    padding: .5rem 0;
+  }
+
+  .logo-desktop img {
+    display: none;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+}
+
 /* Start */
 
 .content-div {
@@ -60,11 +100,13 @@ a span {
   background-color: #d3d3d3;
   background-position: bottom;
   padding: 2rem 1rem;
+  position: relative;
 }
 
 .content-div img {
   position: relative;
   width: 61.5%;
+  margin-top: 6rem;
 }
 
 .learn {
@@ -77,7 +119,7 @@ a span {
   margin: 0 auto 3.5rem auto;
   height: 18.5rem;
   width: 30%;
-  top: 9rem;
+  top: 15rem;
 }
 
 .message {
@@ -105,8 +147,72 @@ a span {
   padding: 0.5rem 0 0.5rem 0;
   background-color: gray;
   text-align: center;
-  color: white;
   width: 100%;
+}
+
+@media only screen and (max-width: 720px) {
+
+  .content-div {
+    flex-direction: column;
+    padding: 3.5rem 0 1.5rem 0;
+    width: 100%;
+  }
+
+  .content-div img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .learn {
+    height: 12.5rem;
+    width: 100%;
+    top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .learn .message {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .start {
+    padding: 1.5rem 0 1.5rem 0;
+    width: 80%;
+    margin: auto;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .learn {
+    height: 7.5rem;
+    width: 100%;
+    top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .learn .message {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .start {
+    padding: 0.5rem 0 0.5rem 0;
+    width: 50%;
+    margin: auto;
+    font-size: 1rem;
+  }
+
+  #bold {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  #lorem {
+    font-size: 1rem;
+  }
+
 }
 
 /* Info */
@@ -198,6 +304,26 @@ a span {
   color: #3f98c8
 }
 
+@media only screen and (max-width: 720px) {
+
+  .content-div2 {
+    display: flex;
+    flex-direction: column;
+    background-position: bottom;
+    padding: 2rem 0 2rem 0;
+  }
+
+  .section {
+    display: none;
+  }
+
+  .section2 {
+    align-content: center;
+    width: 100%;
+    border: none
+  }
+}
+
 /* Courses */
 
 .content-div3 {
@@ -267,9 +393,51 @@ a span {
   font-weight: lighter;
 }
 
+.mobile-courses {
+  display: none;
+}
+
+@media only screen and (max-width: 720px) {
+
+  .content-div3 .courses-div {
+    display: none;
+  }
+
+  .content-div3 .mobile-courses {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0 auto 1rem auto;
+    width: 100%;
+  }
+
+  .mobile-courses span {
+    padding: 1.5rem 0 1.5rem 1rem;
+    width: 80%;
+    margin: 0 auto 1rem auto;
+    font-size: 2rem;
+    background-color: #f6f6f6;
+    color: gray;
+    text-align: left;
+    font-weight: bold;
+  }
+
+}
+
+/* Thesis */
+
 #bg-color {
   background-color: #f6f6f6;
   flex-direction: column;
+}
+
+#bold-thesis {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: gray;
 }
 
 .section video {
@@ -289,6 +457,23 @@ a span {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 1.5rem 0 0.5rem 0;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 720px) {
+
+  .content-div2 .last-div {
+    display: none;
+  }
+
+  .content-div2 .mobile {
+    display: block;
+    width: 100%;
+  }
+
 }
 
 /* Footer */
@@ -316,4 +501,16 @@ footer .location {
 
 #footer-space {
   margin-right: 1rem;
+}
+
+@media only screen and (max-width: 720px) {
+
+  footer .copyright {
+    font-size: 1rem;
+  }
+
+  footer .location {
+    display: none;
+  }
+
 }
