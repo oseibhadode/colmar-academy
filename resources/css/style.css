@@ -206,6 +206,7 @@ a span {
   align-content: center;
   flex-direction: column;
   background-color: #eaecec;
+  width: 100%;
 }
 
 #bold-message {
@@ -222,10 +223,10 @@ a span {
   position: relative;
   justify-content: space-between;
   align-content: space-between;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  height: 50rem;
-  width: 42rem%;
+  height: auto;
+  width: auto;
   margin: 0 3.5rem 2rem 4.5rem;
 }
 
@@ -237,6 +238,10 @@ a span {
   height: auto;
   width: 350px;
   margin-right: 1rem;
+}
+
+#courses-space {
+  margin-bottom: 2rem;
 }
 
 .courses-con img {
