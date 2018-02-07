@@ -1,7 +1,7 @@
 /* Universal Styles */
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Lato", sans-serif;
   font-size: 16px;
 }
 
@@ -12,6 +12,8 @@ header {
   background-color: white;
   position: fixed;
   z-index: 1;
+  color: black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
 }
 
 header .content {
@@ -36,11 +38,16 @@ nav li {
 nav a {
   vertical-align: bottom;
   line-height: 1.6;
-  color: #4a4a4a;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #fb9834;
+  -webkit-transition: color 0.5s ease 0.1s;
+  transition: color 0.5s ease 0.1s;
 }
 
 #title {
-  color: gray;
   font-size: 1.5rem;
 }
 
@@ -54,6 +61,12 @@ a span {
 
 .logo-desktop img {
   flex-grow: 0.02;
+}
+
+header a:hover {
+  color: #fb9834;
+  -webkit-transition: color 0.5s ease 0.1s;
+  transition: color 0.5s ease 0.1s;
 }
 
 header .mobile {
@@ -92,12 +105,16 @@ header .mobile {
 
 /* Start */
 
+#font-color {
+  color: white;
+}
+
 .content-div {
   display: flex;
   justify-content: center;
   align-content: flex-start;
   flex-direction: row;
-  background-color: #d3d3d3;
+  background-color: #fb9834;
   background-position: bottom;
   padding: 2rem 1rem;
   position: relative;
@@ -124,13 +141,24 @@ header .mobile {
 
 .message {
   display: block;
-  color: gray;
   text-align: left;
   width: 100%;
 }
 
 #start-here {
-  color: white;
+  color: #fb9834;
+}
+
+#start-here:hover {
+  color: black;
+  -webkit-transition: color 0.5s ease 0.1s;
+  transition: color 0.5s ease 0.1s;
+}
+
+#start-here:active {
+  color: #fb9834;
+  -webkit-transition: color 0s ease 0s;
+  transition: color 0s ease 0s;
 }
 
 #bold {
@@ -145,7 +173,7 @@ header .mobile {
 .start {
   display: block;
   padding: 0.5rem 0 0.5rem 0;
-  background-color: gray;
+  background-color: white;
   text-align: center;
   width: 100%;
 }
@@ -252,6 +280,11 @@ header .mobile {
   line-height: 1.3;
 }
 
+#quote {
+  line-height: 1.3;
+  font-style: italic;
+}
+
 #signed {
   font-size: 0.8rem;
   margin-top: 1rem;
@@ -266,15 +299,15 @@ header .mobile {
   flex-wrap: wrap;
   width: 40%;
   height: auto;
-  border-top: solid 1px gray;
-  border-left: solid 1px gray;
+  border-top: solid 1px #fb9834;
+  border-left: solid 1px #fb9834;
 }
 
 .info-div {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  border-bottom: solid 1px gray;
+  border-bottom: solid 1px #fb9834;
   padding: 1rem;
 }
 
@@ -301,7 +334,20 @@ header .mobile {
 }
 
 #read-more {
-  color: #3f98c8
+  color: #fb9834;
+}
+
+.info-div:hover {
+  color: #fb9834;
+  -webkit-transition: color 0.5s ease 0.3s;
+  transition: color 0.5s ease 0.3s;
+}
+
+#read-more:hover {
+  text-decoration: underline;
+  color: black;
+  -webkit-transition: color 0.5s ease 0.1s;
+  transition: color 0.5s ease 0.1s;
 }
 
 @media only screen and (max-width: 720px) {
@@ -331,7 +377,7 @@ header .mobile {
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  background-color: #eaecec;
+  background-color: #fb9834;
   width: 100%;
 }
 
@@ -341,7 +387,7 @@ header .mobile {
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-align: center;
-  color: gray;
+  color: white;
 }
 
 .courses-div {
@@ -373,7 +419,13 @@ header .mobile {
 .courses-con img {
   position: relative;
   width: 100%;
-  height: auto
+  height: auto;
+}
+
+.courses-con img:hover {
+  width: 101%;
+  -webkit-transition: width 0s ease-in;
+  transition: width 0s ease-in;
 }
 
 .courses-info {
@@ -391,6 +443,12 @@ header .mobile {
 
 #light {
   font-weight: lighter;
+}
+
+.courses-info a:hover {
+  color: #fb9834;
+  -webkit-transition: color 0.2s ease-in 0.005s;
+  transition: color 0.2s ease-in 0.005s;
 }
 
 .mobile-courses {
@@ -418,9 +476,15 @@ header .mobile {
     margin: 0 auto 1rem auto;
     font-size: 2rem;
     background-color: #f6f6f6;
-    color: gray;
+    color: black;
     text-align: left;
     font-weight: bold;
+  }
+
+  .mobile-courses a:active {
+    color: #fb9834;
+    -webkit-transition: color 0s ease 0s;
+    transition: color 0s ease 0s;
   }
 
 }
@@ -437,7 +501,6 @@ header .mobile {
   font-weight: bold;
   margin-bottom: 2rem;
   text-align: center;
-  color: gray;
 }
 
 .section video {
@@ -457,6 +520,18 @@ header .mobile {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 1.5rem 0 0.5rem 0;
+}
+
+#reimagine a:hover {
+  color: #fb9834;
+  -webkit-transition: color 0.2s ease-in 0.005s;
+  transition: color 0.2s ease-in 0.005s;
+}
+
+.info-box a:hover {
+  color: #fb9834;
+  -webkit-transition: color 0.2s ease-in 0.005s;
+  transition: color 0.2s ease-in 0.005s;
 }
 
 .mobile {
@@ -482,10 +557,10 @@ footer {
   background-color: #f6f6f6;
   padding: 1.5rem 2rem;
   height: 5rem;
+  color: black;
 }
 
 footer .content {
-  color: gray;
   display: flex;
   font-size: 0.75rem;
 }
@@ -501,6 +576,12 @@ footer .location {
 
 #footer-space {
   margin-right: 1rem;
+}
+
+.content a:hover {
+  color: #fb9834;
+  -webkit-transition: color 0.2s ease-in 0.005s;
+  transition: color 0.2s ease-in 0.005s;
 }
 
 @media only screen and (max-width: 720px) {

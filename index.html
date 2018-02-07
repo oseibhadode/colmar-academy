@@ -3,50 +3,50 @@
   <head>
     <meta charset="UTF-8">
     <title>Colmar Academy</title>
-    <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.google.com/specimen/Roboto?selection.family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
-    <!--<link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon">-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   </head>
   <body>
     <!-- Header -->
     <header>
       <div class="content">
         <div class= "logo-desktop"> <img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo"> </div>
-        <a href="index.html" id="title" class="desktop logo"><span>COLMAR</span>ACADEMY</a>
-        <nav class="desktop">
+        <a href="index.html" id="title" class="desktop logo" role="link"><span>COLMAR</span>ACADEMY</a>
+        <nav class="desktop" role="navigation">
           <ul>
-            <li><a href="#">On campus</a></li>
-            <li><a href="#">Online</a></li>
-            <li><a href="#">or companies</a></li>
-            <li><a href="#">Sign in</a></li>
+            <li><a href="#" role="link">On campus</a></li>
+            <li><a href="#" role="link">Online</a></li>
+            <li><a href="#" role="link">or companies</a></li>
+            <li><a href="#" role="link">Sign in</a></li>
           </ul>
         </nav>
-        <nav class="mobile">
+        <nav class="mobile" role="navigation">
           <ul>
-            <li><a href="#"><img src="./resources/images/ic-logo.svg"></a></li>
-            <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
-            <li><a href="#"><img src="./resources/images/ic-online.svg"></a></li>
-            <li><a href="#"><img src="./resources/images/ic-login.svg"></a></li>
+            <li><a href="#" role="link"><img src="./resources/images/ic-logo.svg" alt="Logo"></a></li>
+            <li><a href="#" role="link"><img src="./resources/images/ic-on-campus.svg" alt="Campus"></a></li>
+            <li><a href="#" role="link"><img src="./resources/images/ic-online.svg" alt="Online"></a></li>
+            <li><a href="#" role="link"><img src="./resources/images/ic-login.svg" alt="Login"></a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <!-- Start -->
-    <div class="content-div">
+    <div id="font-color" class="content-div">
       <img src="./resources/images/banner.jpg" alt="Banner">
       <div class="learn">
         <div id="bold" class="message">
           <span id="space">Learn something new everyday</span>
         </div>
         <div id="lorem" class="message">
-          <span id="space">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+          <span id="space">Everyday in Colmar Academy is a new experience</span>
         </div>
         <div class="start">
-           <a href="index.html" id="start-here"><span>Start here</span></a>
+           <a href="index.html" id="start-here" role="link"><span>Start here</span></a>
         </div>
       </div>
     </div>
@@ -54,15 +54,15 @@
     <!-- Info -->
     <div class="content-div2">
       <div class="section">
-        <img src="./resources/images/information-main.jpg" alt="Main Information">
+        <img src="./resources/images/information-main.jpg" alt="Image of Emmanuel, Colmar Academy Alumnus">
         <div id="bold-practice" class="message">
           <span>It doesn&#8217;t hurt to keep practicing</span>
         </div>
-        <div id="space" class="message">
-          <span>&#34;Curabitur ut lobortis enim, a commodo ipsum. Phasellus placerat mauris ac velit iaculis malesuada. Morbi non velit placerat, maximus nunc quis, ultrices erat. Phasellus leo nunc, venenatis a tempus ullamcorper, pellentesque eget ligula. Maecenas ut eros urna. Integer aliquet dignissim ligula, ut sagittis dolor posuere eu.&#34;</span>
+        <div id="quote" class="message">
+          <span>&#34;When I first arrived here at Colmar Academy, learning seemed a bit tough, but my Lecturers helped me settle into the Academy quite well. I got better at my course because of the wonderful family I had here that gave me the courage to keep on improving myself whilst I was at Colmar Academy. You may take a few knocks along the way while being at Colmar,but it doesn&#8217;t hurt to keep practicing.&#34;</span>
         </div>
         <div id="signed" class="message">
-          <span>Emmanuel, Sr Strategist at Hiring.com</span>
+          <span aria-label="Colmar Academy Alumnus">Emmanuel, Sr Strategist at Hiring.com</span>
         </div>
       </div>
 
@@ -77,7 +77,7 @@
               <span>Tue 10/11 &amp; Wed 10/12: 8am-3pm </span>
             </div>
             <div class="message">
-              <a href="index.html" id="read-more">Read more</a>
+              <a href="index.html" id="read-more" role="link">Read more</a>
             </div>
           </div>
         </div>
@@ -91,12 +91,12 @@
               <span>Find which campus is close by you</span>
             </div>
             <div class="message">
-              <a href="index.html" id="read-more">Read more</a>
+              <a href="index.html" id="read-more" role="link">Read more</a>
             </div>
           </div>
         </div>
         <div class="info-div">
-          <img src="./resources/images/information-guest-lecture.jpg" alt="Guest Lecture">
+          <img src="./resources/images/information-guest-lecture.jpg" alt="Guest Lecturer, Oliver Sack">
           <div class="info-box">
             <div id="bold-info" class="message">
               <span>Our guest lecture</span>
@@ -105,7 +105,7 @@
               <span id="space">Join a keynote with Oliver Sack about music in medical treatment</span>
             </div>
             <div class="message">
-              <a href="index.html" id="read-more">Read more</a>
+              <a href="index.html" id="read-more" role="link">Read more</a>
             </div>
           </div>
         </div>
@@ -114,19 +114,19 @@
 
     <!-- Courses -->
     <div class="content-div3">
-      <span id="bold-message">Start Learning</span>
-      <div class="courses-div">
+      <span id="bold-message" role="heading">Start Learning</span>
+      <div class="courses-div" role="grid">
         <div id="courses-space" class="courses-con">
           <img src="./resources/images/course-software.jpg" alt="Software">
           <div class="courses-info">
             <div id="bold-info" class="message">
-              <span>Software engineering</span>
+              <a href="#" role="link"><span>Software engineering</span></a>
             </div>
             <div id="light" class="message">
               <span>COURSES</span>
             </div>
             <div id="light" class="message">
-              <span id="space">Web Development, Mobile Development, iOT, APIs</span>
+              <span id="space" role="list">Web Development, Mobile Development, iOT, APIs</span>
             </div>
           </div>
         </div>
@@ -134,13 +134,13 @@
           <img src="./resources/images/course-computer-art.jpg" alt="Computer Art">
           <div class="courses-info">
             <div id="bold-info" class="message">
-              <span>Computer art</span>
+              <a href="#" role="link"><span>Computer art</span></a>
             </div>
             <div id="light" class="message">
               <span>COURSES</span>
             </div>
             <div id="light" class="message">
-              <span id="space">Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</span>
+              <span id="space" role="list">Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</span>
             </div>
           </div>
         </div>
@@ -148,13 +148,13 @@
           <img src="./resources/images/course-design.jpg" alt="Design">
           <div class="courses-info">
             <div id="bold-info" class="message">
-              <span>Design</span>
+              <a href="#" role="link"><span>Design</span></a>
             </div>
             <div id="light" class="message">
               <span>COURSES</span>
             </div>
             <div id="light" class="message">
-              <span id="space">User Experience Design, User Research, Visual Design</span>
+              <span id="space" role="list">User Experience Design, User Research, Visual Design</span>
             </div>
           </div>
         </div>
@@ -162,13 +162,13 @@
           <img src="./resources/images/course-data.jpg" alt="Data">
           <div class="courses-info">
             <div id="bold-info" class="message">
-              <span>Data</span>
+              <a href="#" role="link"><span>Data</span></a>
             </div>
             <div id="light" class="message">
               <span>COURSES</span>
             </div>
             <div id="light" class="message">
-              <span id="space">Data Science, Big Data, SQL, Data Visualization</span>
+              <span id="space" role="list">Data Science, Big Data, SQL, Data Visualization</span>
             </div>
           </div>
         </div>
@@ -176,13 +176,13 @@
           <img src="./resources/images/course-business.jpg" alt="Business">
           <div class="courses-info">
             <div id="bold-info" class="message">
-              <span>Business</span>
+              <a href="#" role="link"><span>Business</span></a>
             </div>
             <div id="light" class="message">
               <span>COURSES</span>
             </div>
             <div id="light" class="message">
-              <span id="space">Product Development, Business Development, Startup</span>
+              <span id="space" role="list">Product Development, Business Development, Startup</span>
             </div>
           </div>
         </div>
@@ -190,30 +190,30 @@
           <img src="./resources/images/course-marketing.jpg" alt="Marketing">
           <div class="courses-info">
             <div id="bold-info" class="message">
-              <span>Marketing</span>
+              <a href="#" role="link"><span>Marketing</span></a>
             </div>
             <div id="light" class="message">
               <span>COURSES</span>
             </div>
             <div id="light" class="message">
-              <span id="space">Analytics, Content Marketing, Mobile Marketing</span>
+              <span id="space" role="list">Analytics, Content Marketing, Mobile Marketing</span>
             </div>
           </div>
         </div>
       </div>
-      <div class="mobile-courses">
-        <span>Software engineering</span>
-        <span>Computer art</span>
-        <span>Design</span>
-        <span>Data</span>
-        <span>Business</span>
-        <span>Marketing</span>
+      <div class="mobile-courses" role="grid">
+        <span><a href="#" role="link">Software engineering</a></span>
+        <span><a href="#" role="link">Computer art</a></span>
+        <span><a href="#" role="link">Design</a></span>
+        <span><a href="#" role="link">Data</a></span>
+        <span><a href="#" role="link">Business</a></span>
+        <span><a href="#" role="link">Marketing</a></span>
       </div>
     </div>
 
     <!-- Thesis -->
     <div id="bg-color" class="content-div2">
-      <span id="bold-thesis">Thesis exhibit</span>
+      <span id="bold-thesis" role="heading">Thesis exhibit</span>
       <div class="last-div">
         <div class="section">
           <video width="100%" height="auto" src="./resources/videos/thesis.mp4" controls>
@@ -222,10 +222,10 @@
              Your browser does not support the video tag.
           </video>
           <div id="reimagine" class="message">
-            <span>Reimagine urban</span>
+            <a href="#" role="link"><span>Reimagine urban</span></a>
           </div>
           <div id="space" class="message">
-            <span>&#34;Aliquam a odio et leo tempor auctor. Etiam et purus lobortis, ultricies ligula eget, ullamcorper quam. Morbi eleifend porttitor enim, quis tincidunt erat imperdiet vel. Phasellus in ex nec urna molestie consequat sollicitudin dictum sapien. Morbi commodo sit amet nisl sed sollicitudin. Etiam facilisis rutrum mattis.&#34;</span>
+            <span>Reimagine urban like never before</span>
           </div>
         </div>
 
@@ -234,7 +234,7 @@
             <img src="./resources/images/thesis-fisma.jpg" alt="Thesis Fisma">
             <div class="info-box">
               <div id="bold-info" class="message">
-                <span id="space">Fisma: Design and Prototype</span>
+                <a href="#" role="link"><span id="space">Fisma: Design and Prototype</span></a>
               </div>
               <div class="message">
                 <span id="space">Designer showcase of new prototype product</span>
@@ -245,7 +245,7 @@
             <img src="./resources/images/thesis-now-and-then.jpg" alt="Thesis now and then">
             <div class="info-box">
               <div id="bold-info" class="message">
-                <span>Now and then</span>
+                <a href="#" role="link"><span>Now and then</span></a>
               </div>
               <div class="message">
                 <span>Research study about New York</span>
@@ -267,8 +267,10 @@
      <footer>
        <div class="content">
          <span class="copyright">&copy; 2016 Colmar Academy, All rights reserved</span>
-         <span id="footer-space" class="location">Terms</span>
-         <span class="location">Privacy</span>
+         <a href="#" role="link"><span id="footer-space" class="location">Terms</span></a>
+         <a href="#" role="link"><span id="footer-space" class="location">Privacy</span></a>
+         <span id="footer-space"><a href="#" role="link"><i class="fa fa-facebook fa-lg"></i></a></span>
+         <a href="#" role="link"><span id="footer-space"><i class="fa fa-twitter fa-lg"></i></span></a>
        </div>
      </footer>
 
